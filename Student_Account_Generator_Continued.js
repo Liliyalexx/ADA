@@ -26,16 +26,16 @@ let student_data = [
 
 
 // accept user input for the student's name
-function provideStudent_names(student_names) {
+function provideStudent_names(name) {
   for (i = 0; i < student_names.length; i++) {
-    names[i] = student_names[i];
+    names[i] = name[i];
   }
 }
 
 // generate IDs from 111111 to 999999
 var generateIds = () => {
   for (i = 0; i < names.length; i++) {
-    ids[i] = Math.round(Math.random() * (999999 - 111111) + 111111);
+    id[i] = Math.round(Math.random() * (999999 - 111111) + 111111);
   }
 };
 
@@ -55,7 +55,7 @@ var generateEmails = () => {
     let lastThreeIdDigits = ids[i] % 1000; //divide by 1000 and find the remainder
 
     // combine inputs into an email
-    emails[i] =
+    email[i] =
       firstInitial + lastName + lastThreeIdDigits + '@adadeveloperacademy.org';
   }
 };
