@@ -1,31 +1,29 @@
 
 # Do the following three times
-3.times do 
+3.times {
 
-# Ask the user to input a positive integer value 
-  puts "Enter positive number " + (i+1).to_s +  ":"
-    i +=1
-    n = gets.chomp
+# Ask the user to input a positive integer value
+  print "Please enter the positive number: "
 
-# Convert the user input to an integer 
-    num = n.to_i
-# Save the value in a variable 
-    user_input = gets
-    
+# Convert the user input to an integer
+# Save the value in a variable
+while user_input = gets.to_i
+if user_input.is_a? Integer
+puts "your number is #{user_input}"
+break
+else
+print "Think of a number "
+end
+end
+}
+
+# Add 20 to each of the three numbers and print this new value for each to the console.
+print "Please enter the positive number: "
+while user_input = gets.to_i
+  if user_input.is_a? Integer
+    puts "your number is #{user_input+20}"
+    break
+  else
+    print "Think of a number "
   end
 end
-
-
-# Add 20 to each of the three numbers and print this new value for each to the console. 
-3.times do
-  puts "Twenty added to the numbers you entered gives us" + (i).to_s + ":"
-  your_number = rand(x)
-  output << your_number.to_i
-
-  puts output + 20
-
-  end
-end
-
-
-
