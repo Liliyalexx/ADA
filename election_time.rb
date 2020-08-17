@@ -68,7 +68,7 @@ list.each do |name|
   end
 
  #Handle ties for a winner appropriately
-  win_ner = "nWinner"
+  win_ner = "\nWinner"
   if winners.count > 1
      win_ner << "S:"
   else
