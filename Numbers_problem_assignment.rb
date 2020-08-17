@@ -1,29 +1,21 @@
+# Do the following three times:
 
-# Do the following three times
 3.times {
 
-# Ask the user to input a positive integer value
-  print "Please enter the positive number: "
+#Ask the user to input a positive integer value
 
-# Convert the user input to an integer
-# Save the value in a variable
-while user_input = gets.to_i
-if user_input.is_a? Integer
-puts "your number is #{user_input}"
-break
+puts "Please enter your positive number:  "
+
+user_input = gets.chomp.to_i
+
+#If the number is greater than or equal to 20, display a message to share.
+if user_input >= 20
+  puts "Your number is greater then or equal 20!"
+#If the number is less than or equal to 20, display a message to share.
 else
-print "Think of a number "
-end
+   user_input < 20
+   puts "Your number is less then 20!"
+
 end
 }
-
-# Add 20 to each of the three numbers and print this new value for each to the console.
-print "Please enter the positive number: "
-while user_input = gets.to_i
-  if user_input.is_a? Integer
-    puts "your number is #{user_input+20}"
-    break
-  else
-    print "Think of a number "
-  end
-end
+puts "Thank you for participation!"
