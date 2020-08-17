@@ -1,22 +1,22 @@
 
 //Utilize a single array variable to store all student information
 
-let student_data = [
+let student_roster = [
   {
     name:"",
-    ID: 111,
+    ID:0 ,
     email: ""
 
   },
   {
     name:"",
-    ID: 222,
+    ID: 0,
     email: ""
 
   },
   {
     name:"",
-    ID: 333,
+    ID: 0,
     email: ""
 
   }
@@ -60,11 +60,11 @@ var generateEmails = () => {
   }
 };
 
-var printStudent_data = () => {
+var printStudent_roster = () => {
   console.log(names.length)
   generateIds();
   generateEmails();
-  
+
 
   for (i = 0; i < names.length; i++) {
     console.log(names[i]);
