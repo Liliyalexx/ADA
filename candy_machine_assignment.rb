@@ -12,19 +12,19 @@ end
 #Ask the user how much money they have, assume that the $ symbol is part of the prompt (the user doesn't have to enter it)
 puts "\n$ #{your_cash}Ask? Let's see what we have for you? \n\n"
 
-price_per_candy = {'a' => 0.55,
-        'b' => 0.45,
-        'c' => 0.85,
-        'd' => 0.68,
-        'e' => 0.50
+price_per_candy = {'1' => 0.55,
+        '2' => 0.45,
+        '3' => 0.85,
+        '4' => 0.68,
+        '5' => 0.50
 }
 #Display all candy options and their costs (even if the user cannot afford the candy)
 puts "<<<<< Our Candy List >>>>> \n\n"
-puts "a $ #{price_per_candy["a"]} Crusty-Crust\n"
-puts "b $ #{price_per_candy["b"]} Choco-nut\n"
-puts "c $ #{price_per_candy["c"]} Sweet and Salty\n"
-puts "d $ #{price_per_candy["d"]} Chips\n"
-puts "e $ #{price_per_candy["e"]} Sweet hot dog\n\n\n"
+puts "1 $ #{price_per_candy["1"]} Crusty-Crust\n"
+puts "2 $ #{price_per_candy["2"]} Choco-nut\n"
+puts "3 $ #{price_per_candy["3"]} Sweet and Salty\n"
+puts "4 $ #{price_per_candy["4"]} Chips\n"
+puts "5 $ #{price_per_candy["5"]} Sweet hot dog\n\n\n"
 
 
 
