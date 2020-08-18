@@ -29,7 +29,7 @@ puts "e $ #{price_per_candy["e"]} Sweet hot dog\n\n\n"
 
 
 print "What do you want? > "
-your_candy = gets.chomp().capitalize
+your_candy = gets.chomp()
 
 
 #Decide whether the user can afford the candy or not, if they can't, tell them so, if they can, calculate and display their change
