@@ -12,7 +12,7 @@ end
 
 walkers_number = ask ("How many people: ")=gets.to_i
 
-#Earning goal for the walk-a-thon
+# Earning goal for the walk-a-thon
 
 walkers_goal = ask("What is your earning goal for the walk-a-thon:").to_f
 puts linebreak
@@ -22,11 +22,11 @@ walkers_number.times do loop
   name = ask("What is your name:")
 
 
-  #Number of laps completed for 5 people5.times
+# Number of laps completed for 5 people5.times
   5.times{
   laps = ask("Number of laps you have completed?").to_i
 }
-  #Amount earned per lap completed (per person)
+# Amount earned per lap completed (per person)
   earned_per_lap = ask("Enter amount earned per completed lap:").to_f
 
   earned = laps * earned_per_lap

@@ -9,7 +9,7 @@ while your_cash < 0
   your_cash = gets.chomp().to_f
 end
 
-#Ask the user how much money they have, assume that the $ symbol is part of the prompt (the user doesn't have to enter it)
+# Ask the user how much money they have, assume that the $ symbol is part of the prompt (the user doesn't have to enter it)
 puts "\n$ #{your_cash}Ask? Let's see what we have for you? \n\n"
 
 price_per_candy = {'1' => 0.55,
@@ -18,7 +18,7 @@ price_per_candy = {'1' => 0.55,
         '4' => 0.68,
         '5' => 0.50
 }
-#Display all candy options and their costs (even if the user cannot afford the candy)
+# Display all candy options and their costs (even if the user cannot afford the candy)
 puts "<<<<< Our Candy List >>>>> \n\n"
 puts "1 $ #{price_per_candy["1"]} Crusty-Crust\n"
 puts "2 $ #{price_per_candy["2"]} Choco-nut\n"
@@ -32,7 +32,7 @@ print "What do you want? > "
 your_candy = gets.chomp()
 
 
-#Decide whether the user can afford the candy or not, if they can't, tell them so, if they can, calculate and display their change
+# Decide whether the user can afford the candy or not, if they can't, tell them so, if they can, calculate and display their change
 while price_per_candy[your_candy] == nil
 puts"\nEnter a value a-e. > "
 your_candy = gets.chomp().capitalize

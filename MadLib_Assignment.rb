@@ -1,4 +1,4 @@
-#Create a MadLib program that accepts input from the user for the MadLib
+# Create a MadLib program that accepts input from the user for the MadLib
 def ask (question, kind = "string")
   print question + " "
   answer = gets.chomp

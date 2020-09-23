@@ -1,5 +1,5 @@
-#To create an electronic election program that tracks votes, total votes, and determines a winner.
-#Create an election program that accepts input from the user and outputs the winner of the election
+# To create an electronic election program that tracks votes, total votes, and determines a winner.
+# Create an election program that accepts input from the user and outputs the winner of the election
 election_candidates = {}
 list = []
 votes_total = []
@@ -40,25 +40,25 @@ end
 
 print linebreak
 
-#Outputs the winner of the election
+# Outputs the winner of the election
 
 puts "\nElection Results..."
 puts "\nVote Summary:"
 puts " "
 
-#Consider how to handle more than 3 candidates
+# Consider how to handle more than 3 candidates
 list.each do |name|
   votes_total << election_candidates[name.upcase].sum
   in_total = "#{name} - #{election_candidates[name.upcase].sum} vote"
 
-  #Handle grammar of vote summary saying vote or votes appropriately
+# Handle grammar of vote summary saying vote or votes appropriately
    if election_candidates[name.upcase].sum > 1
     in_total << "s"
    end
    puts in_total
   end
 
-  #Consider how to handle more than 10 votes
+# Consider how to handle more than 10 votes
   i=0
   votes_total.each do |total|
     if total ==votes_total.max
@@ -67,7 +67,7 @@ list.each do |name|
     i += 1
   end
 
- #Handle ties for a winner appropriately
+# Handle ties for a winner appropriately
   win_ner = "\nWinner"
   if winners.count > 1
      win_ner << "S:"

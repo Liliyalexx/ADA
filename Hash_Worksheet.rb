@@ -6,8 +6,8 @@ person = {
   "nickname" => "adie"
 }
 
-puts person.length #Output: 3
-puts person["last_name"] #Output: lovelace
+puts person.length # Output: 3
+puts person["last_name"] # Output: lovelace
 
 
 
@@ -17,8 +17,8 @@ animals = {
   "cat" => "feline"
 }
 animals["cat"] = "feline"
-puts animals["dog"] #Output: canine
-puts animals["donkey"] #Output: undefined
+puts animals["dog"] # Output: canine
+puts animals["donkey"] # Output: undefined
 
 
 
@@ -29,18 +29,18 @@ workout_summary = {
   "yoga" => false
 }
 workout_summary["lunges"] = 101
-puts workout_summary["lunges"] #Output: 101
+puts workout_summary["lunges"] # Output: 101
 
 4.
 menu = {}
 menu["ramen"] = "garlic tonkotsu"
 menu["burger"] = "bleu sun"
 menu["tea"] = "green"
-puts menu.length #Output: 3
-puts menu["burger"] #Output:bleu sun
-puts menu["tater_tots"] #Output: undefined
+puts menu.length # Output: 3
+puts menu["burger"] # Output:bleu sun
+puts menu["tater_tots"] # Output: undefined
 # Hash problems with hashes using symbol notation:
-#Output:
+# Output:
 
 menu = {
 "ramen" =>"galic tonkotsu",
@@ -56,8 +56,8 @@ person = {
   nickname: "adie"
 }
 
-puts person.length #Output: 3
-puts person[:last_name] #Output: lovelace
+puts person.length # Output: 3
+puts person[:last_name] # Output: lovelace
 
 6.
 human_being = {
@@ -67,9 +67,9 @@ human_being = {
   meaning: "wise man"
 }
 
-puts human_being.length #Output: 4
-puts "The only living species of genus #{human_being[:genus]} are #{human_being[:species]}." #Output: "The only living species of genus Homo are Sapiens."
-puts human_being[:meaning].length #Output: 8
+puts human_being.length # Output: 4
+puts "The only living species of genus #{human_being[:genus]} are #{human_being[:species]}." # Output: "The only living species of genus Homo are Sapiens."
+puts human_being[:meaning].length # Output: 8
 
 7.
 oatmeal_raisin = {
@@ -80,15 +80,15 @@ oatmeal_raisin = {
   allergens: "nuts"
 }
 
-puts oatmeal_raisin.length #Output: 5
+puts oatmeal_raisin.length # Output: 5
 
 if oatmeal_raisin[:dairy_free]
-  puts "Oatmeal raisin cookies are dairy free." #Oatmeal raisin cookies are dairy free.
+  puts "Oatmeal raisin cookies are dairy free." # Oatmeal raisin cookies are dairy free.
 end
 
 oatmeal_raisin[:allergens] += ", soy"
-puts oatmeal_raisin[:allergens] #Output:  nuts, soy
+puts oatmeal_raisin[:allergens] # Output:  nuts, soy
 
 if !oatmeal_raisin[:gluten_free] || !oatmeal_raisin[:vegan]
-  puts "The oatmeal raisin cookie is either not gluten free or not vegan." #Output: The oatmeal raisin cookie is either not gluten free or not vegan.
+  puts "The oatmeal raisin cookie is either not gluten free or not vegan." # Output: The oatmeal raisin cookie is either not gluten free or not vegan.
 end
